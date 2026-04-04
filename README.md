@@ -1,11 +1,11 @@
-# 🌾 Agrogranja — Laravel 10
+# Agrogranja — Laravel 10
 
 Sistema de gestión para fincas: cultivos, animales, gastos, ingresos y tareas.  
 Diseño responsive con **modo PC** (sidebar) y **modo móvil** (bottom nav), botón toggle 🖥️/📱.
 
 ---
 
-## ⚙️ Instalación paso a paso
+## Instalación paso a paso
 
 ### Requisitos
 - PHP 8.1+  
@@ -43,7 +43,7 @@ Abre → **http://localhost:8000**
 
 ---
 
-## 🔑 Usuario demo
+## Usuario demo
 
 | Campo | Valor |
 |-------|-------|
@@ -66,7 +66,7 @@ La preferencia se guarda en `localStorage`.
 
 ---
 
-## 📁 Estructura
+## Estructura
 
 ```
 agrogranja-laravel/
