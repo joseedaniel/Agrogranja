@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
         DB::table('gastos')->insert([
             ['usuario_id'=>$userId,'categoria'=>'Semillas','descripcion'=>'Semillas de maíz híbrido','cantidad'=>10,'valor'=>85000,'fecha'=>now()->toDateString(),'created_at'=>now()],
             ['usuario_id'=>$userId,'categoria'=>'Fertilizantes','descripcion'=>'Abono orgánico compuesto','cantidad'=>5,'valor'=>120000,'fecha'=>now()->subDays(7)->toDateString(),'created_at'=>now()],
-            ['usuario_id'=>$userId,'categoria'=>'Mano de obra','descripcion'=>'Jornaleros siembra lote 1','valor'=>200000,'fecha'=>now()->subDays(15)->toDateString(),'created_at'=>now()],
+            ['usuario_id'=>$userId,'categoria'=>'Mano de obra','descripcion'=>'Jornaleros siembra lote 1','cantidad'=>1,'valor'=>200000,'fecha'=>now()->subDays(15)->toDateString(),'created_at'=>now()],
             ['usuario_id'=>$userId,'categoria'=>'Plaguicidas','descripcion'=>'Herbicida lote yuca','cantidad'=>2,'valor'=>65000,'fecha'=>now()->subDays(20)->toDateString(),'created_at'=>now()],
         ]);
 
@@ -51,8 +51,8 @@ class DatabaseSeeder extends Seeder
 
         // Animales
         DB::table('animales')->insert([
-            ['usuario_id'=>$userId,'especie'=>'Ganado bovino','nombre_lote'=>'Lote bovino 1','cantidad'=>8,'estado'=>'activo','peso_promedio'=>350,'unidad_peso'=>'kg','created_at'=>now(),'updated_at'=>now()],
-            ['usuario_id'=>$userId,'especie'=>'Gallinas','nombre_lote'=>'Galpón principal','cantidad'=>45,'estado'=>'activo','created_at'=>now(),'updated_at'=>now()],
-        ]);
+    ['usuario_id'=>$userId,'especie'=>'Ganado bovino','nombre_lote'=>'Lote bovino 1','cantidad'=>8,'estado'=>'activo','peso_promedio'=>350,'unidad_peso'=>'kg','created_at'=>now(),'updated_at'=>now()],
+    ['usuario_id'=>$userId,'especie'=>'Gallinas','nombre_lote'=>'Galpón principal','cantidad'=>45,'estado'=>'activo','peso_promedio'=>2,'unidad_peso'=>'kg','created_at'=>now(),'updated_at'=>now()],
+]);
     }
 }
